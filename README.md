@@ -1,8 +1,61 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<h1 align="center">
+    <b>YouTubeClone</b>
+</h1>
+
+<hr/>
+
+![image-20210917132304105](C:\Users\JUPENG\AppData\Roaming\Typora\typora-user-images\image-20210917132304105.png)
+
+<h2>Introduction</h2>
+
+<hr/>
+
+```
+>why you created this project?
+>>It is because im new to Front-end and i wanted to become a better Front-end Developer by building projects. And i saw <a src='https://www.freecodecamp.org/news/become-a-better-developer-by-building-projects/'><b>How to Become a Better Front-end Developer by Building Projects (Ideas Included)</b>.</a> And i use the idea of this site to build a clone website(youtube).
+```
+
+
+
+<h2>Description</h2>
+
+<hr/>
+
+ A low-level YouTube. Project based on Nextjs, Firebase, Tailwindcss
+
+**Tech/Framework used**
+
+<p align="left"> <a href="https://www.w3schools.com/css/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/> </a>  <a href="https://firebase.google.com/" target="_blank"> <img src="https://www.vectorlogo.zone/logos/firebase/firebase-icon.svg" alt="firebase" width="40" height="40"/> </a> <a href="https://www.w3.org/html/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/> </a> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/> </a> <a href="https://nextjs.org/" target="_blank"> <img src="https://cdn.worldvectorlogo.com/logos/nextjs-3.svg" alt="nextjs" width="40" height="40"/> </a> <a href="https://reactjs.org/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="react" width="40" height="40"/> </a> <a href="https://tailwindcss.com/" target="_blank"> <img src="https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg" alt="tailwind" width="40" height="40"/> </a> </p>
+
+View Site: <a style='{color:blue}'>https://github.com/settings/applications/1708616</a>
+
+<hr/>
+
+<h2 align='left'>Functional Description</h2>
+
+```
+- [x] Comment
+- [x] Like
+- [x] History
+- [x] Search
+- [x] Upload
+- [x] View Count
+- [x] Your channel
+- [x] Sign in
+- [x] Sign out
+```
+
+
 
 ## Getting Started
 
-First, run the development server:
+First, run the install dependencies command:
+
+```bash
+npm install
+```
+
+Second, run the development server:
 
 ```bash
 npm run dev
@@ -12,12 +65,6 @@ yarn dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
-
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:
@@ -26,9 +73,3 @@ To learn more about Next.js, take a look at the following resources:
 - [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
 You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.

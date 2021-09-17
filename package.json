@@ -1,20 +1,35 @@
 {
-  "name": "nextjs_firebase_youtube_clone",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
-  },
-  "dependencies": {
-    "next": "11.1.2",
-    "react": "17.0.2",
-    "react-dom": "17.0.2"
-  },
-  "devDependencies": {
-    "eslint": "7.32.0",
-    "eslint-config-next": "11.1.2"
-  }
+    "name": "nextjs_firebase_youtube_clone",
+    "version": "0.1.0",
+    "private": true,
+    "scripts": {
+        "dev": "next dev",
+        "build": "next build",
+        "start": "next start",
+        "lint": "next lint"
+    },
+    "dependencies": {
+        "@tailwindcss/line-clamp": "^0.2.1",
+        "firebase": "^8.6.2",
+        "icomoon-react": "^2.0.19",
+        "next": "11.1.2",
+        "react": "17.0.2",
+        "react-dom": "17.0.2",
+        "react-firebase-hooks": "^3.0.4",
+        "react-firebaseui": "^5.0.2",
+        "react-lazyload": "^3.2.0",
+        "react-loader-spinner": "^4.0.0",
+        "react-modern-drawer": "^0.1.1",
+        "react-simple-snackbar": "^1.1.11",
+        "react-tooltip": "^4.2.21",
+        "react-topbar-progress-indicator": "^4.1.0"
+    },
+    "devDependencies": {
+        "autoprefixer": "^10.3.4",
+        "eslint": "7.32.0",
+        "eslint-config-next": "11.1.2",
+        "postcss": "^8.3.6",
+        "tailwind-scrollbar": "^1.3.1",
+        "tailwindcss": "^2.2.15"
+    }
 }
