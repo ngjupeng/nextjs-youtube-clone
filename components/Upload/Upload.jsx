@@ -91,147 +91,148 @@ export default function Upload() {
   const uploadVideo = (e) => {
     setUploadInfo({ ...uploadInfo, video: e.target.files[0] });
   };
-
-  if (userLoading) {
-    return <Loading />;
-  } else {
-    if (user) {
-      return (
-        <Layout>
-          {isUploading ? <TopBarProgress /> : null}
-          {isUploading ? <Loading isUpload={true} /> : null}
-          <div className="w-full flex flex-col justify-center items-center mt-24 px-5 lg:py-5 lg:pl-0 lg:pr-10">
-            <div className="flex items-center">
-              <div>
-                <img
-                  src="https://www.gstatic.com/youtube/img/creator/no_content_illustration_upload_video_v3_darkmode.svg"
-                  alt=""
-                />
-              </div>
-              <h4 className="ml-5 font-bold text-white text-3xl md:text-4xl lg:text-5xl">
-                Upload Video
-              </h4>
-            </div>
-            <div className="flex flex-col items-center w-full">
-              <form onSubmit={upload} className=" w-full max-w-lg">
-                <div className="flex flex-wrap -mx-3 mb-6">
-                  <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
-                    <label
-                      className="block uppercase tracking-wide text-light-ele text-lg font-bold mb-2"
-                      htmlFor="grid-first-name"
-                    >
-                      Title
-                    </label>
-                    <input
-                      autoComplete="off"
-                      pattern=".*\S+.*"
-                      title="Fill In Title Here!!"
-                      className="appearance-none block w-full bg-gray-200 text-ele border border-red-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
-                      id="grid-first-name"
-                      type="text"
-                      placeholder="Title"
-                      name="title"
-                      required
-                      onChange={uploadData}
-                    />
-                  </div>
+  {
+    if (userLoading) {
+      return <Loading />;
+    } else {
+      if (user) {
+        return (
+          <Layout>
+            {isUploading ? <TopBarProgress /> : null}
+            {isUploading ? <Loading isUpload={true} /> : null}
+            <div className="w-full flex flex-col justify-center items-center mt-24 px-5 lg:py-5 lg:pl-0 lg:pr-10">
+              <div className="flex items-center">
+                <div>
+                  <img
+                    src="https://www.gstatic.com/youtube/img/creator/no_content_illustration_upload_video_v3_darkmode.svg"
+                    alt=""
+                  />
                 </div>
-                <div className="flex flex-wrap -mx-3 mb-6">
-                  <div className="w-full px-3">
-                    <label
-                      className="block uppercase tracking-wide text-light-ele text-lg font-bold mb-2"
-                      htmlFor="grid-password"
-                    >
-                      Description
-                    </label>
-                    <pre>
-                      <textarea
+                <h4 className="ml-5 font-bold text-white text-3xl md:text-4xl lg:text-5xl">
+                  Upload Video
+                </h4>
+              </div>
+              <div className="flex flex-col items-center w-full">
+                <form onSubmit={upload} className=" w-full max-w-lg">
+                  <div className="flex flex-wrap -mx-3 mb-6">
+                    <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+                      <label
+                        className="block uppercase tracking-wide text-light-ele text-lg font-bold mb-2"
+                        htmlFor="grid-first-name"
+                      >
+                        Title
+                      </label>
+                      <input
                         autoComplete="off"
                         pattern=".*\S+.*"
-                        title="Fill In Description Here!!"
+                        title="Fill In Title Here!!"
+                        className="appearance-none block w-full bg-gray-200 text-ele border border-red-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
+                        id="grid-first-name"
+                        type="text"
+                        placeholder="Title"
+                        name="title"
                         required
                         onChange={uploadData}
-                        className="appearance-none block w-full bg-gray-200 text-ele border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
-                        id="grid-password"
-                        type="password"
-                        placeholder="Description..."
-                        name="description"
                       />
-                    </pre>
+                    </div>
+                  </div>
+                  <div className="flex flex-wrap -mx-3 mb-6">
+                    <div className="w-full px-3">
+                      <label
+                        className="block uppercase tracking-wide text-light-ele text-lg font-bold mb-2"
+                        htmlFor="grid-password"
+                      >
+                        Description
+                      </label>
+                      <pre>
+                        <textarea
+                          autoComplete="off"
+                          pattern=".*\S+.*"
+                          title="Fill In Description Here!!"
+                          required
+                          onChange={uploadData}
+                          className="appearance-none block w-full bg-gray-200 text-ele border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                          id="grid-password"
+                          type="password"
+                          placeholder="Description..."
+                          name="description"
+                        />
+                      </pre>
 
-                    <p className="text-light-ele text-lg italic">
-                      Make it as long and as crazy as you&apos;d like
-                    </p>
+                      <p className="text-light-ele text-lg italic">
+                        Make it as long and as crazy as you'd like
+                      </p>
+                    </div>
                   </div>
-                </div>
-                <div className="flex flex-wrap -mx-3 mb-6">
-                  <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
-                    <label
-                      className="block uppercase tracking-wide text-light-ele text-lg font-bold mb-2"
-                      htmlFor="grid-first-name"
-                    >
-                      Image display on cover
-                    </label>
-                    <input
-                      autoComplete="off"
-                      title="Select Cover Image Here"
-                      onChange={handleChange}
-                      className="appearance-none block w-full bg-gray-200 text-ele border border-red-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
-                      id="grid-first-name"
-                      type="file"
-                      placeholder="Title"
-                      accept="image/png, image/gif, image/jpeg"
-                      required
-                    />
-                    <img src={file} alt="" className="my-5" />
+                  <div className="flex flex-wrap -mx-3 mb-6">
+                    <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+                      <label
+                        className="block uppercase tracking-wide text-light-ele text-lg font-bold mb-2"
+                        htmlFor="grid-first-name"
+                      >
+                        Image display on cover
+                      </label>
+                      <input
+                        autoComplete="off"
+                        title="Select Cover Image Here"
+                        onChange={handleChange}
+                        className="appearance-none block w-full bg-gray-200 text-ele border border-red-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
+                        id="grid-first-name"
+                        type="file"
+                        placeholder="Title"
+                        accept="image/png, image/gif, image/jpeg"
+                        required
+                      />
+                      <img src={file} alt="" className="my-5" />
+                    </div>
                   </div>
-                </div>
-                <div className="flex flex-wrap -mx-3 mb-6">
-                  <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
-                    <label
-                      className="block uppercase tracking-wide text-light-ele text-lg font-bold mb-2"
-                      htmlFor="grid-first-name"
-                    >
-                      Video
-                    </label>
-                    <input
-                      autoComplete="off"
-                      title="Choose Your Video Here"
-                      className="appearance-none block w-full bg-gray-200 text-ele border border-red-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
-                      id="grid-first-name"
-                      type="file"
-                      placeholder="Title"
-                      accept="video/mp4,video/webm,video/ogg,.ogg"
-                      name="video"
-                      required
-                      onChange={uploadVideo}
-                    />
+                  <div className="flex flex-wrap -mx-3 mb-6">
+                    <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+                      <label
+                        className="block uppercase tracking-wide text-light-ele text-lg font-bold mb-2"
+                        htmlFor="grid-first-name"
+                      >
+                        Video
+                      </label>
+                      <input
+                        autoComplete="off"
+                        title="Choose Your Video Here"
+                        className="appearance-none block w-full bg-gray-200 text-ele border border-red-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
+                        id="grid-first-name"
+                        type="file"
+                        placeholder="Title"
+                        accept="video/mp4,video/webm,video/ogg,.ogg"
+                        name="video"
+                        required
+                        onChange={uploadVideo}
+                      />
+                    </div>
                   </div>
-                </div>
-                <button
-                  title="Upload Now!!"
-                  type="submit"
-                  className="mx-auto w-full flex justify-center items-center rounded-full text-3xl self-center font-bold text-white bg-red-200 py-2 px-10 bg-light-ele ripple mb-10"
-                >
-                  Upload
-                </button>
-              </form>
+                  <button
+                    title="Upload Now!!"
+                    type="submit"
+                    className="mx-auto w-full flex justify-center items-center rounded-full text-3xl self-center font-bold text-white bg-red-200 py-2 px-10 bg-light-ele ripple mb-10"
+                  >
+                    Upload
+                  </button>
+                </form>
+              </div>
             </div>
-          </div>
-        </Layout>
-      );
-    } else {
-      return (
-        <Layout>
-          <Link href="/auth/authPage">
-            <div className="cursor-pointer w-full flex flex-col justify-center items-center mt-24 px-5 lg:py-5 lg:pl-0 lg:pr-10">
-              <span className="font-bold text-light-ele underline">
-                Sorry, you need to log in to upload videos...
-              </span>
-            </div>
-          </Link>
-        </Layout>
-      );
+          </Layout>
+        );
+      } else {
+        return (
+          <Layout>
+            <Link href="/auth/authPage">
+              <div className="cursor-pointer w-full flex flex-col justify-center items-center mt-24 px-5 lg:py-5 lg:pl-0 lg:pr-10">
+                <span className="font-bold text-light-ele underline">
+                  Sorry, you need to log in to upload videos...
+                </span>
+              </div>
+            </Link>
+          </Layout>
+        );
+      }
     }
   }
 }
