@@ -14,7 +14,7 @@ export default function OtherVideo(props) {
   return (
     <a href={"/video/" + props.videoId} className="cursor-pointer">
       <div className="cursor-pointer flex mb-5">
-        <div className="w-3/5 md:w-2/5 h-40 overflow-hidden">
+        <div className="w-3/5 md:w-2/5 h-50 overflow-hidden">
           <img src={coverImage} alt="" className="w-full h-full" />
         </div>
         <div className="flex flex-col px-3 w-2/5 md:w-3/5">
