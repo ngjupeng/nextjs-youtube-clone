@@ -10,15 +10,21 @@ import LazyLoad from "react-lazyload";
 export default function YourChannel(props) {
   const [user, loading, error] = useAuthState(firebase.auth());
   const [yourVideos, setYourVideos] = useState([]);
-  useEffect(async () => {
-    if (user) {
-      const videosData = await firebase.firestore().collection("videos").get();
+  useEffect(() => {
+    async function fetchData() {
+      if (user) {
+        const videosData = await firebase
+          .firestore()
+          .collection("videos")
+          .get();
 
-      const myVideoArr = videosData.docs.filter((value) =>
-        props.data.videos.includes(value.data().videoId)
-      );
-      setYourVideos(myVideoArr);
+        const myVideoArr = videosData.docs.filter((value) =>
+          props.data.videos.includes(value.data().videoId)
+        );
+        setYourVideos(myVideoArr);
+      }
     }
+    fetchData();
   }, [user]);
   {
     if (loading) {

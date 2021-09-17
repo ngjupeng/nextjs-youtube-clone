@@ -178,7 +178,7 @@ export default function Video(props) {
             <source src={props.videoUrl} type="video/webm" />
             <source src={props.videoUrl} type="video/mp4" />
             <source src={props.videoUrl} type="video/ogg" />
-            Sorry, your browser doesn't support embedded videos.
+            Sorry, your browser doesn&apos;t support embedded videos.
           </video>
           {/* details */}
           <div className="my-5 text-white">

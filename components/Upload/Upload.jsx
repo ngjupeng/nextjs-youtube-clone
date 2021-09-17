@@ -118,7 +118,7 @@ export default function Upload() {
                     <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
                       <label
                         className="block uppercase tracking-wide text-light-ele text-lg font-bold mb-2"
-                        for="grid-first-name"
+                        htmlFor="grid-first-name"
                       >
                         Title
                       </label>
@@ -140,7 +140,7 @@ export default function Upload() {
                     <div className="w-full px-3">
                       <label
                         className="block uppercase tracking-wide text-light-ele text-lg font-bold mb-2"
-                        for="grid-password"
+                        htmlFor="grid-password"
                       >
                         Description
                       </label>
@@ -160,7 +160,7 @@ export default function Upload() {
                       </pre>
 
                       <p className="text-light-ele text-lg italic">
-                        Make it as long and as crazy as you'd like
+                        Make it as long and as crazy as you&apos;d like
                       </p>
                     </div>
                   </div>
@@ -168,7 +168,7 @@ export default function Upload() {
                     <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
                       <label
                         className="block uppercase tracking-wide text-light-ele text-lg font-bold mb-2"
-                        for="grid-first-name"
+                        htmlFor="grid-first-name"
                       >
                         Image display on cover
                       </label>
@@ -190,7 +190,7 @@ export default function Upload() {
                     <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
                       <label
                         className="block uppercase tracking-wide text-light-ele text-lg font-bold mb-2"
-                        for="grid-first-name"
+                        htmlFor="grid-first-name"
                       >
                         Video
                       </label>

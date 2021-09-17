@@ -6,11 +6,14 @@ import Link from "next/link";
 
 export default function HistoryVideo(props) {
   const [coverImage, setCoverImage] = useState();
-  useEffect(async () => {
-    const storage = firebase.storage();
-    const pathReference = storage.ref(props.coverImagePath);
-    const imageUrl = await pathReference.getDownloadURL();
-    setCoverImage(imageUrl);
+  useEffect(() => {
+    async function fetchData() {
+      const storage = firebase.storage();
+      const pathReference = storage.ref(props.coverImagePath);
+      const imageUrl = await pathReference.getDownloadURL();
+      setCoverImage(imageUrl);
+    }
+    fetchData();
   }, []);
   return (
     <Link href={"/video/" + props.videoId}>

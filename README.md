@@ -2,24 +2,16 @@
     <b>YouTubeClone</b>
 </h1>
 
-<hr/>
 
-![image-20210917132304105](C:\Users\JUPENG\AppData\Roaming\Typora\typora-user-images\image-20210917132304105.png)
+![Screenshot (1)](https://user-images.githubusercontent.com/74807962/133735662-cc94eb19-a19e-48bc-84fe-7ec48c6d3b25.png)
 
 <h2>Introduction</h2>
 
-<hr/>
-
-```
 >why you created this project?
->>It is because im new to Front-end and i wanted to become a better Front-end Developer by building projects. And i saw <a src='https://www.freecodecamp.org/news/become-a-better-developer-by-building-projects/'><b>How to Become a Better Front-end Developer by Building Projects (Ideas Included)</b>.</a> And i use the idea of this site to build a clone website(youtube).
-```
-
-
+>
+>><p>It is because im new to Front-end and i wanted to become a better Front-end Developer by building projects. And i saw <a href='https://www.freecodecamp.org/news/become-a-better-developer-by-building-projects/'><b>How to Become a Better Front-end Developer by Building Projects (Ideas Included)</b>.</a> And i use the idea of this site to build a clone website(youtube)</p>.
 
 <h2>Description</h2>
-
-<hr/>
 
  A low-level YouTube. Project based on Nextjs, Firebase, Tailwindcss
 
@@ -29,11 +21,8 @@
 
 View Site: <a style='{color:blue}'>https://github.com/settings/applications/1708616</a>
 
-<hr/>
-
 <h2 align='left'>Functional Description</h2>
 
-```
 - [x] Comment
 - [x] Like
 - [x] History
@@ -43,7 +32,6 @@ View Site: <a style='{color:blue}'>https://github.com/settings/applications/1708
 - [x] Your channel
 - [x] Sign in
 - [x] Sign out
-```
 
 
 
