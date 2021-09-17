@@ -5,7 +5,7 @@ import firebase from "../../firebase/initFirebase";
 import Link from "next/link";
 import Loading from "../Loading/Loading";
 import { useEffect } from "react";
-import { useState } from "react/cjs/react.development";
+import { useState } from "react";
 import LazyLoad from "react-lazyload";
 export default function YourChannel(props) {
   const [user, loading, error] = useAuthState(firebase.auth());

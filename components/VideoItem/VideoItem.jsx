@@ -2,7 +2,7 @@ import React from "react";
 import Link from "next/link";
 import firebase from "../../firebase/initFirebase";
 import "firebase/storage";
-import { useEffect, useState } from "react/cjs/react.development";
+import { useEffect, useState } from "react";
 export default function VideoItem(props) {
   const [coverImage, setCoverImage] = useState();
 

@@ -1,5 +1,5 @@
 import React from "react";
-import { useEffect, useState } from "react/cjs/react.development";
+import { useEffect, useState } from "react";
 import firebase from "../../firebase/initFirebase";
 import "firebase/storage";
 import Link from "next/link";

@@ -4,7 +4,7 @@ import iconSet from "../../selection.json";
 import Comment from "../Comment/Comment";
 import OtherVideo from "../OtherVideos/OtherVideo";
 import LayoutVideo from "../Layout/LayoutVideo";
-import { useEffect, useState } from "react/cjs/react.development";
+import { useEffect, useState } from "react";
 import { useAuthState } from "react-firebase-hooks/auth";
 import firebase from "../../firebase/initFirebase";
 import Loader from "react-loader-spinner";
