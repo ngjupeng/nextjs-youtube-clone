@@ -5,9 +5,15 @@ export default function auth() {
   return (
     <div>
       <Head>
-        <title>Sign In</title>
-      </Head>
+        <title> Sign In </title>{" "}
+      </Head>{" "}
       <Auth />
     </div>
   );
+}
+
+export async function getServerSideProps() {
+  return {
+    props: {},
+  };
 }

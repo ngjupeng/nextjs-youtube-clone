@@ -4,9 +4,15 @@ export default function UploadVideo() {
   return (
     <>
       <Head>
-        <title>Upload</title>
-      </Head>
+        <title> Upload </title>{" "}
+      </Head>{" "}
       <Upload />
     </>
   );
+}
+
+export async function getServerSideProps() {
+  return {
+    props: {},
+  };
 }
