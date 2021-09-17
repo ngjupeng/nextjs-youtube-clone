@@ -1,5 +1,5 @@
 import React from "react";
-import NavBar from "../navbar/NavBar";
+import NavBar from "../Navbar/NavBar";
 import SnackbarProvider from "react-simple-snackbar";
 
 export default function Layout({ children }) {
