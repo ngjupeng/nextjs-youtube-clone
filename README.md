@@ -8,7 +8,7 @@
 <h2>Introduction</h2>
 
 >why you created this project?
->><p>It is because im new to Front-end and i wanted to become a better Front-end Developer by building projects. And i saw <a src='https://www.freecodecamp.org/news/become-a-better-developer-by-building-projects/'><b>How to Become a Better Front-end Developer by Building Projects (Ideas Included)</b>.</a> And i use the idea of this site to build a clone website(youtube)</p>.
+>><p>It is because im new to Front-end and i wanted to become a better Front-end Developer by building projects. And i saw <a href='https://www.freecodecamp.org/news/become-a-better-developer-by-building-projects/'><b>How to Become a Better Front-end Developer by Building Projects (Ideas Included)</b>.</a> And i use the idea of this site to build a clone website(youtube)</p>.
 
 <h2>Description</h2>
 
