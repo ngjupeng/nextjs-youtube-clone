@@ -160,7 +160,7 @@ export default function Upload() {
                       </pre>
 
                       <p className="text-light-ele text-lg italic">
-                        Make it as long and as crazy as you'd like
+                        Make it as long and as crazy as you&apos;d like
                       </p>
                     </div>
                   </div>
