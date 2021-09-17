@@ -3,7 +3,7 @@
 </h1>
 
 
-![Screenshot (1)](https://user-images.githubusercontent.com/74807962/133735662-cc94eb19-a19e-48bc-84fe-7ec48c6d3b25.png)
+![Screenshot 2021-09-17 173300](https://user-images.githubusercontent.com/74807962/133761156-6ec3c355-9da3-4a7c-af60-33b0ac123466.png)
 
 <h2>Introduction</h2>
 
@@ -18,7 +18,7 @@
 
 <p align="left"> <a href="https://www.w3schools.com/css/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/> </a>  <a href="https://firebase.google.com/" target="_blank"> <img src="https://www.vectorlogo.zone/logos/firebase/firebase-icon.svg" alt="firebase" width="40" height="40"/> </a> <a href="https://www.w3.org/html/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/> </a> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/> </a> <a href="https://nextjs.org/" target="_blank"> <img src="https://cdn.worldvectorlogo.com/logos/nextjs-3.svg" alt="nextjs" width="40" height="40"/> </a> <a href="https://reactjs.org/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="react" width="40" height="40"/> </a> <a href="https://tailwindcss.com/" target="_blank"> <img src="https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg" alt="tailwind" width="40" height="40"/> </a> </p>
 
-View Site: <a style='{color:blue}'>https://nextjs-youtube-clone-six.vercel.app/</a>
+View Site: <a style='{color:blue}'>https://nextjs-youtube-clone-kappa.vercel.app/</a>
 
 <h2 align='left'>Functional Description</h2>
 
